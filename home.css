@@ -1,73 +1,186 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <script src="logic.js"></script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home page</title>
-    <link rel="stylesheet" href="home.css">
-   
-</head>
-<body>
-    <header>
-        <img src="ETB.jpg" alt="" >
-        <section class="hs">
-            <div class="hd"> <b style="color: white;">Home</b></div>
-            <div class="hd"><a style="color: white;" href="about.html"><b >About</b></a></div>
-            <div class="hd"><a style="color: white;" href="https://www.moneycontrol.com/promo/mc_interstitial_dfp.php?size=1280x540"><b>Money Control</b></a></div>
-            <div class="hd"><a style="color: white;" href="https://groww.in/"><b>Grow</b></a></div>
-    </header><br><hr>
-    <h1 style="color: rgb(163, 141, 16);" >Stock Analyzer</h1><hr><br><br><br>
-    <div>
-        <form action="result.html" class="form">
+*{
+    margin: 0%;
+}
+
+a:link {
+
+font-size: 18px;
+color:white
+
+}
+img{
+    width: 100%;
+    height: 400px;
+}
+
+a:hover {
+color: red;
+
+
+
+}
+section{
+margin-top: 10px;
+margin-bottom: 10px;
+}
+.hd {
+display: inline-block;
+width: 200px;
+height: 25px;
+text-align: center;
+padding-top: 5px;
+border-radius: 10px;
+margin-top: 0px;
+margin-left: 110px;
+border-style: solid;
+border-color: rgb(163, 141, 16);
+border-width: 2px;
+}
+form{
+margin-left:300px;
+}
+#submit{
+height: 40px;
+margin-left: 300px;
+width: 160px;
+color: black;
+background-color: rgb(163, 141, 16);
+}
+#roe{
+margin-left: 63px;
+}
+#roa{
+margin-left: 69px;
+}
+#indpe{
+margin-left: 3px;
+}
+#pe{
+margin-left: 68px;
+}
+#pb{
+margin-left: 95px;
+}
+#dy{
+margin-left: 108px;
+}
+#de{
+margin-left: 86px;
+}
+#ce{
+margin-left: 135px;
+} 
+#ps{
+margin-left: 100px;
+}
+#qr{
+margin-left: 149px;
+}
+#name{
+margin-left: 145px;
+}
+
+h1{
+text-align: center;
+}
+input{
+border-radius: 10px;
+height: 20px;
+margin-right: 10px;
+border-color: rgb(163, 141, 16);
+border-width: 4px;
+}
+body{
+background-color: black;
+}
+label{
+margin-right: 10px;
+font-weight: bold;
+color: white;
+}
+hr {
+
+text-align: right;
+margin-right: 0;
+}
+@media (max-width: 575.98px) { 
+    img{
+    width: 100%;
+    height: 200px;
+}
+    body{
+        background-color:black;
+        }
+        .hd {
+            display: inline-block;
+            width: 250px;
+            height: 25px;
+             margin-left:80px ;
+            text-align: center;
+            padding-top: 5px;
+            border-radius: 10px;
+            margin-top: 0px;
             
-            <label for="name" >Enter Stock Name</label>
-            <input type="text" id="name" name="name" placeholder="e.g Infosys" required ><br><br>
-            <label  >Enter Last Three Years Annual Income</label><br><br>
-            <label for="1in" >2020 </label>
-            <input type="text" id="1in" name="1in" required pattern="[0-9]+">
-            <label for="2in" >2019 </label>
-            <input type="text" id="2in" name="2in" required pattern="[0-9]+" >
-            <label for="3in" >2018 </label>
-            <input type="text" id="3in" name="3in" required pattern="[0-9]+"><br><br>
-            <label  >Enter Last Three Years Profits </label><br><br>
-            <label for="1pl" > 2020 </label>
-            <input type="text" id="1pl" name="1pl" required pattern="[0-9]+">
-            <label for="2pl" > 2019 </label>
-            <input type="text" id="2pl" name="2pl" required pattern="[0-9]+" >
-            <label for="3pl" > 2018  </label>
-            <input type="text" id="3pl" name="3pl" required pattern="[0-9]+" ><br><br>
-            <label  >Enter Last Three Years Promoters Share Holdings </label><br><br>
-            <label for="1sh" > 2020  </label>
-            <input type="text" id="1sh" name="1sh" required pattern="[0-9]+">
-            <label for="2sh" > 2019 </label>
-            <input type="text" id="2sh" name="2sh" required pattern="[0-9]+">
-            <label for="3sh" > 2018  </label>
-            <input type="text" id="3sh" name="3sh" required pattern="[0-9]+"><br><br><br>
-            <label for="dy" >Enter Divident Yield %</label>
-            <input type="text" id="dy" name="dy"required pattern="[0-9]+"><br><br>
-            <label for="indpe" >Enter Industry Price to Earnings Ratio</label>
-            <input type="text" id="indpe" name="indpe" required pattern="[0-9]+" ><br><br>
-            <label for="pe" >Enter Price to Earnings Ratio</label>
-            <input type="text" id="pe" name="pe" required pattern="[0-9]+"><br><br>
-            <label for="pb" >Enter Price to Book Ratio</label>
-            <input type="text" id="pb" name="pb" required pattern="[0-9]+"><br><br>
-            <label for="roe" >Enter Return On Equity Ratio</label>
-            <input type="text" id="roe" name="roe" required pattern="[0-9]+"><br><br>
-            <label for="roa" >Enter Return On Assets Ratio</label>
-            <input type="text" id="roa" name="roa" required pattern="[0-9]+"><br><br>
-            <label for="de" >Enter Debt To Equity Ratio</label>
-            <input type="text" id="de" name="de"required pattern="[0-9]+"><br><br>
-            <label for="ce" >Enter Current Ratio </label>
-            <input type="text" id="ce" name="ce"required pattern="[0-9]+"><br><br>
-            <label for="qr" >Enter Quick Ratio</label>
-            <input type="text" id="qr" name="qr"required pattern="[0-9]+"><br><br>
-            <label for="ps" >Enter Price to Sales Ratio</label>
-            <input type="text" id="ps" name="ps" required pattern="[0-9]+"><br><br>
-            <input type="submit" id="submit" value="Analyze" onclick="home()" >
-           </form>
-           
-    </div>
-</body>
-</html>
+            border-style: solid;
+            border-color: rgb(163, 141, 16);
+            border-width: 2px;
+            }
+            input{
+                border-radius: 8px;
+                height: 20px;
+               
+                border-color: rgb(163, 141, 16);
+                border-width: 4px;
+                width: 70px;
+                }
+              
+                label{
+                margin-right: 10px;
+                font-weight: bold;
+                color: white;
+                }
+                form{
+                    margin-left:5px;
+                    }
+                    #submit{
+                        height: 30px;
+                        margin-left: 120px;
+                        width: 100px;
+                        color: black;
+                        background-color: rgb(163, 141, 16);
+                        }
+    #roe{
+margin-left: 63px;
+}
+#roa{
+margin-left: 69px;
+}
+#indpe{
+margin-left: 3px;
+}
+#pe{
+margin-left: 68px;
+}
+#pb{
+margin-left: 95px;
+}
+#dy{
+margin-left: 108px;
+}
+#de{
+margin-left: 86px;
+}
+#ce{
+margin-left: 135px;
+} 
+#ps{
+margin-left: 100px;
+}
+#qr{
+margin-left: 149px;
+}
+#name{
+margin-left: 145px;
+}
+    
+}
