@@ -105,13 +105,13 @@ margin-right: 0;
 }
 @media (max-width: 575.98px) { 
     body{
-        background-color: black;
+        background-color:black;
         }
         .hd {
             display: inline-block;
             width: 200px;
             height: 25px;
-             margin-left: 50px;
+             margin-left:80px ;
             text-align: center;
             padding-top: 5px;
             border-radius: 10px;
@@ -122,12 +122,12 @@ margin-right: 0;
             border-width: 2px;
             }
             input{
-                border-radius: 10px;
+                border-radius: 8px;
                 height: 20px;
-                margin-right: 10px;
+               
                 border-color: rgb(163, 141, 16);
-                border-width: 4px;
-                width: 50px;
+                border-width: 2px;
+                width: 70px;
                 }
               
                 label{
@@ -136,11 +136,11 @@ margin-right: 0;
                 color: white;
                 }
                 form{
-                    margin-left:10px;
+                    margin-left:5px;
                     }
                     #submit{
                         height: 30px;
-                        margin-left: 100px;
+                        margin-left: 110px;
                         width: 100px;
                         color: black;
                         background-color: rgb(163, 141, 16);
