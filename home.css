@@ -113,9 +113,9 @@ margin-right: 0;
         }
         .hd {
             display: inline-block;
-            width: 250px;
+            width: 170px;
             height: 25px;
-             margin-left:80px ;
+             margin-left:24% ;
             text-align: center;
             padding-top: 5px;
             border-radius: 10px;
@@ -128,14 +128,14 @@ margin-right: 0;
             input{
                 border-radius: 8px;
                 height: 20px;
-               
                 border-color: rgb(163, 141, 16);
                 border-width: 4px;
-                width: 70px;
+                width: 100px;
+                outline: none;
                 }
               
                 label{
-                margin-right: 10px;
+                margin-right: 0px;
                 font-weight: bold;
                 color: white;
                 }
@@ -144,43 +144,43 @@ margin-right: 0;
                     }
                     #submit{
                         height: 30px;
-                        margin-left: 120px;
-                        width: 100px;
+                        margin-left: 30%;
+                        width: 110px;
                         color: black;
                         background-color: rgb(163, 141, 16);
                         }
     #roe{
-margin-left: 63px;
+margin-left:30%;
 }
 #roa{
-margin-left: 69px;
+margin-left: 30%;
 }
 #indpe{
-margin-left: 3px;
+margin-left: 30%;
 }
 #pe{
-margin-left: 68px;
+margin-left: 30%;
 }
 #pb{
-margin-left: 95px;
+margin-left: 30%;
 }
 #dy{
-margin-left: 108px;
+margin-left: 30%;
 }
 #de{
-margin-left: 86px;
+margin-left: 30%;
 }
 #ce{
-margin-left: 135px;
+margin-left: 30%;
 } 
 #ps{
-margin-left: 100px;
+margin-left: 30%;
 }
 #qr{
-margin-left: 149px;
+margin-left: 30%;
 }
 #name{
-margin-left: 145px;
+margin-left: 30%;
 }
     
 }
